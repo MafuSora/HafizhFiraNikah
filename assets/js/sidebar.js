@@ -30,3 +30,8 @@ window.addEventListener("scroll", () => {
     }
   });
 });
+
+const sidebarToggle = document.getElementById("sidebarToggle");
+sidebarToggle.addEventListener("click", () => {
+  sidebar.classList.toggle("sidebar-hidden");
+});
