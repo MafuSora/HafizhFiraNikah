@@ -1,0 +1,57 @@
+/* 🌸 Bunga Pastel Jatuh */
+.flower {
+  position: fixed;
+  top: -20px;
+  font-size: 14px;
+  opacity: 0.85;
+  pointer-events: none;
+  z-index: 9998;
+}
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
+}
+/* Lightbox Enhancement */
+.glightbox-clean .gslide-description {
+  font-size: 16px;
+  color: var(--text);
+}
+.glightbox-clean .gclose {
+  color: var(--accent);
+}
+/* Utillity Spacing */
+.section {
+  padding: 40px 16px;
+}
+.section-center {
+  text-align: center;
+}
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+/* Gift Section animation (marquee) */
+.gift-marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background: var(--secondary);
+  padding: 14px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.gift-running {
+  display: inline-block;
+  padding-left: 100%;
+  animation: giftScroll 15s linear infinite;
+}
+.gift-paused {
+  animation-play-state: paused;
+}
+@keyframes giftScroll {
+  from { transform: translateX(0%); }
+  to { transform: translateX(-100%); }
+}
